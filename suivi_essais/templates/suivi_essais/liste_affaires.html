@@ -1,10 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Liste des affaires</title>
 </head>
 <body>
+
+<h2>Liste des affaires</h2>
+
+<form method="get" class="form-inline mb-3">
+    <label for="recherche">Recherche globale :</label>
+    <input type="text" id="recherche" name="q" value="{{ recherche|default_if_none:'' }}">
+
+    <label for="adresse">Adresse contient :</label>
+    <input type="text" id="adresse" name="adresse" value="{{ adresse_recherchee|default_if_none:'' }}">
+
+    <label for="etat">État :</label>
+<select name="etat" id="etat">
+    <option value="">-- Tous les états --</option>
+    {% for e in etats %}
+        <option value="{{ e.code }}" {% if etat_selectionne|default_if_none:'' == e.code|stringformat:"s" %}selected{% endif %}>
+            {{ e.libelle }}
+        </option>
+    {% endfor %}
+</select>
+
+
+    <button type="submit">Filtrer</button>
+</form>
+
+<!-- 🔍 DEBUG -->
+<p>
+    <strong>DEBUG :</strong> état sélectionné = <code>{{ etat_selectionne }}</code>,
+    adresse = <code>{{ adresse_recherchee }}</code>,
+    recherche = <code>{{ recherche }}</code>
+</p>
+
+<table border="1" cellspacing="0" cellpadding="5">
+    <thead>
+        <tr>
+            <th>Nom du chantier</th>
+            <th>Adresse</th>
+            <th>État</th>
+            <th>Nombre d'essais</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for affaire in affaires %}
+        <tr>
+            <td>
+                <a href="{% url 'suivi_essais:affaire_detail' affaire.id %}">
+                    {{ affaire.nom_chantier }}
+                </a>
+            </td>
+            <td>{{ affaire.adresse }}</td>
+            <td>{{ affaire.etat.libelle }}</td>
+            <td>{{ affaire.nb_essais }}</td>
+        </tr>
+        {% empty %}
+        <tr>
+            <td colspan="4">Aucune affaire trouvée avec ces filtres.</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+<a href="{% url 'suivi_essais:import_excel' %}">Importer des essais</a>
+<a href="{% url 'suivi_essais:liste_essais' %}" class="btn btn-secondary">📇 Imprimer des étiquettes</a>
+
 
 </body>
 </html>

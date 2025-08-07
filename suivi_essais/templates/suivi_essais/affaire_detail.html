@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,6 +6,53 @@
     <title>Title</title>
 </head>
 <body>
+    <h2>{{ affaire.code_affaire }} - {{ affaire.nom_chantier }}</h2>
+    <p>{{ affaire.adresse }}</p>
+    <p>État : {{ affaire.etat }}</p>
+
+    <h3>Essais</h3>
+
+    <table border="1" cellpadding="5">
+        <thead>
+            <tr>
+                <th>Identifiant</th>
+                <th>Type</th>
+                <th>État</th>
+                <th>Date</th>
+                <th>Conducteur</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for essai in essais %}
+                <tr>
+                    <td><a href="{% url 'suivi_essais:essai_detail' essai.pk %}">{{ essai.identifiant }}</a></td>
+                    <td>{{ essai.get_type_essai_display }}</td>
+                    <td>{{ essai.etat }}</td>
+                    <td>{{ essai.date_realisation|default:"–" }}</td>
+                    <td>{{ essai.conducteur|default:"–" }}</td>
+                </tr>
+            {% empty %}
+                <tr><td colspan="5">Aucun essai encore</td></tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{% url 'suivi_essais:essai_create' affaire.pk %}">➕ Ajouter un essai</a>
+
+    <h3>Photos</h3>
+    {% if affaire.photos.exists %}
+        <div style="display:flex; flex-wrap:wrap; gap:10px;">
+            {% for photo in affaire.photos.all %}
+                <img src="{{ photo.image.url }}" alt="photo" style="width:200px; border:1px solid #ccc;">
+            {% endfor %}
+        </div>
+    {% else %}
+        <p>Aucune photo enregistrée.</p>
+    {% endif %}
+
+    <p><a href="{% url 'suivi_essais:upload_photo' affaire.pk %}">➕ Ajouter des photos</a></p>
+
+    <p><a href="{% url 'suivi_essais:affaire_list' %}">⬅️ Retour à la liste des affaires</a></p>
 
 </body>
 </html>

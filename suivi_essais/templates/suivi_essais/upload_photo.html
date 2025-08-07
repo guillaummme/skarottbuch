@@ -3,6 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+     <h2>Ajouter des photos à l'affaire {{ affaire.code_affaire }}</h2>
+
+    <form method="post" enctype="multipart/form-data">
+      {% csrf_token %}
+      <input type="file" name="images" multiple>
+      <br><br>
+      <button type="submit">Uploader</button>
+    </form>
+
+    <p><a href="{% url 'suivi_essais:affaire_detail' affaire.pk %}">⬅ Retour à l'affaire</a></p>
 </head>
 <body>
 

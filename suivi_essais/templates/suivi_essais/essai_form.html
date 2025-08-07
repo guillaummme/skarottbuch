@@ -1,10 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>{% if essai %}Modifier{% else %}Créer{% endif %} un essai</title>
 </head>
 <body>
+    <h1>{% if essai %}Modifier{% else %}Créer{% endif %} un essai</h1>
 
+    <form method="post">
+        {% csrf_token %}
+
+        <h2>Informations générales</h2>
+        {{ form.as_p }}
+
+        {% if form_specifique %}
+            <h2>Détails spécifiques</h2>
+            {{ form_specifique.as_p }}
+        {% endif %}
+
+        <button type="submit">Enregistrer</button>
+    </form>
+
+    <p>
+        {% if essai %}
+            <a href="{% url 'suivi_essais:essai_detail' essai.pk %}">⬅️ Retour aux détails</a>
+        {% else %}
+            <a href="{% url 'suivi_essais:affaire_detail' affaire.pk %}">⬅️ Retour à l'affaire</a>
+        {% endif %}
+    </p>
 </body>
 </html>

@@ -1,10 +1,68 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Détail de l'essai - {{ essai.nom }}</title>
 </head>
 <body>
+    <h1>{{ essai.nom }}</h1>
 
+    <!-- Informations communes à tous les essais -->
+    <div class="essai-info">
+        <p><strong>Type d'essai:</strong> {{ essai.get_type_essai_display }}</p>
+        <p><strong>Date de réalisation:</strong> {{ essai.date_realisation|default:"Non définie" }}</p>
+        <p><strong>Conducteur:</strong> {{ essai.conducteur|default:"Non assigné" }}</p>
+        <p><strong>État:</strong> {{ essai.etat }}</p>
+        {% if essai.fichier_rapport %}
+            <p><strong>Rapport:</strong> <a href="{{ essai.fichier_rapport.url }}">Télécharger</a></p>
+        {% endif %}
+    </div>
+
+    <!-- Informations spécifiques selon le type d'essai -->
+    <div class="details-specifiques">
+        <h2>Détails spécifiques</h2>
+
+        {% if essai.type_essai == 'CAROTTE' %}
+            <h3>Détails du carottage</h3>
+            <p><strong>Profondeur:</strong> {{ details.profondeur|default:"0" }} cm</p>
+            <p><strong>Diamètre:</strong> {{ details.diametre|default:"Non spécifié" }} cm</p>
+            <p><strong>Nature de l'enrobé:</strong> {{ details.nature_enrobe|default:"Non spécifiée" }}</p>
+            <p><strong>Épaisseur:</strong> {{ details.epaisseur|default:"Non spécifiée" }} cm</p>
+
+        {% elif essai.type_essai == 'SONDAGE' %}
+            <h3>Détails du sondage</h3>
+            <p><strong>Profondeur:</strong> {{ details.profondeur|default:"0" }} cm</p>
+            <p><strong>Méthode:</strong> {{ details.methode|default:"Non spécifiée" }}</p>
+            <p><strong>Résistance du sol:</strong> {{ details.resistance_sol|default:"Non spécifiée" }}</p>
+            <p><strong>Humidité:</strong> {{ details.humidite|default:"Non spécifiée" }}</p>
+
+        {% elif essai.type_essai == 'PERMEA' %}
+            <h3>Détails de la perméabilité</h3>
+            <p><strong>Profondeur:</strong> {{ details.profondeur|default:"0" }} cm</p>
+            <p><strong>Débit:</strong> {{ details.debit|default:"0" }} m³/s</p>
+            <p><strong>Durée de mesure:</strong> {{ details.duree_mesure|default:"Non spécifiée" }} s</p>
+            <p><strong>Coefficient k:</strong> {{ details.perm_k|default:"Non calculé" }} m/s</p>
+        {% endif %}
+
+        {% if details.observations %}
+            <h3>Observations</h3>
+            <p>{{ details.observations }}</p>
+        {% endif %}
+    </div>
+
+    <div class="actions">
+        <p>
+            <a href="{% url 'suivi_essais:essai_edit' essai.pk %}">✏️ Modifier l'essai</a>
+        </p>
+    </div>
+
+
+    <!-- Liens de navigation -->
+    <div class="navigation">
+        <p>
+            <a href="{% url 'suivi_essais:affaire_detail' essai.affaire.pk %}">⬅️ Retour à l'affaire</a>
+        </p>
+    </div>
 </body>
 </html>

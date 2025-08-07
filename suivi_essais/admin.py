@@ -1,11 +1,16 @@
 from django.contrib import admin
-from .models import Client, Etat, Affaire, Essai, LogEtat
+from .models import (
+    Client, Etat, Affaire, Essai, LogEtat,
+    Carottage, Sondage, Permeabilite
+)
+from .models import PhotoAffaire
+admin.site.register(PhotoAffaire)
 
-# Permet d’ajouter des essais directement depuis la fiche affaire
+
 class EssaiInline(admin.TabularInline):
     model = Essai
     extra = 1
-    fields = ('nom', 'type_essai', 'etat', 'date_realisation', 'conducteur')
+    fields = ('libelle', 'type_essai', 'etat', 'date_realisation', 'conducteur')
 
 @admin.register(Affaire)
 class AffaireAdmin(admin.ModelAdmin):
@@ -15,10 +20,13 @@ class AffaireAdmin(admin.ModelAdmin):
 
 @admin.register(Essai)
 class EssaiAdmin(admin.ModelAdmin):
-    list_display = ('nom', 'type_essai', 'affaire', 'etat', 'date_realisation')
+    list_display = ('libelle', 'type_essai', 'affaire', 'etat', 'date_realisation')
     list_filter = ('type_essai', 'etat')
-    search_fields = ('nom', 'affaire__code_affaire')
+    search_fields = ('libelle', 'affaire__code_affaire')
 
+admin.site.register(Carottage)
+admin.site.register(Sondage)
+admin.site.register(Permeabilite)
 admin.site.register(Client)
 admin.site.register(Etat)
 admin.site.register(LogEtat)

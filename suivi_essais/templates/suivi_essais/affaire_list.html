@@ -3,6 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <h1>Liste des affaires</h1>
+    <a href="{% url 'suivi_essais:affaire_create' %}">Créer une nouvelle affaire</a>
+    <ul>
+    {% for affaire in affaires %}
+        <li><a href="{% url 'suivi_essais:affaire_detail' affaire.pk %}">{{ affaire.code_affaire }} - {{ affaire.nom_chantier }}</a></li>
+    {% endfor %}
+</ul>
+<a href="{% url 'suivi_essais:import_excel' %}">Importer des essais</a>
+
 </head>
 <body>
 

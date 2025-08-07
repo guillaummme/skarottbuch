@@ -1,0 +1,78 @@
+<!-- templates/liste_essais.html -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Liste des essais</title>
+</head>
+<body>
+    <h1>Liste des essais</h1>
+
+    <form method="post">
+        {% csrf_token %}
+
+        <label for="date_debut">Date de début :</label>
+        <input type="date" name="date_debut" value="{{ date_debut }}">
+
+        <label for="date_fin">Date de fin :</label>
+        <input type="date" name="date_fin" value="{{ date_fin }}">
+
+        <label for="code_affaire">N° de chantier :</label>
+        <input type="text" name="code_affaire" value="{{ code_affaire }}">
+
+
+        <button type="submit" name="filtrer">Filtrer</button>
+
+        <hr>
+
+        {% if essais %}
+            <label>
+                <input type="checkbox" id="select_all"> Tout sélectionner
+            </label>
+
+        <table border="1" cellspacing="0" cellpadding="5">
+            <thead>
+                <tr>
+                    <th><input type="checkbox" id="select_all"></th>
+                    <th>ID</th>
+                    <th>Libellé</th>
+                    <th>Type</th>
+                    <th>Adresse</th>
+                    <th>N° Chantier</th>  <!-- nouvelle colonne -->
+                    <th>Date de création</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for essai in essais %}
+                <tr>
+                    <td><input type="checkbox" name="essais" value="{{ essai.id }}"></td>
+                    <td>{{ essai.identifiant }}</td>
+                    <td>{{ essai.libelle }}</td>
+                    <td>{{ essai.type_essai }}</td>
+                    <td>{{ essai.affaire.adresse }}</td>
+                    <td>{{ essai.affaire.code_affaire }}</td> <!-- affichage -->
+                    <td>{{ essai.date_creation }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+            <button type="submit" name="generer_pdf">Générer étiquettes PDF</button>
+        {% else %}
+            <p>Aucun essai trouvé pour la période sélectionnée.</p>
+        {% endif %}
+    </form>
+
+    <script>
+        const selectAll = document.getElementById("select_all");
+        if (selectAll) {
+            selectAll.addEventListener("change", function () {
+                document.querySelectorAll('input[name="essais"]').forEach(cb => {
+                    cb.checked = selectAll.checked;
+                });
+            });
+        }
+    </script>
+</body>
+</html>
