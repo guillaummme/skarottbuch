@@ -1,0 +1,95 @@
+IDENTIFIANT;TYPE;CODE_CHANTIER;DLR;DPROG;DREA;DENLEV;DRENDU;COMMENTAIRE;LIBELLE;VILLE;RUE;DA_ETIQUETTE;DA_FORMULAIRE;DA_CREATION;DA_CLOT;CAMPAGNE_CODE_CHANTIER;OS_LIBELLE;OS_NO_ENGAGEMENT;OS_NO;COORD_LON;COORD_LAT;CC48_X;CC48_Y;CC48_Z;DLEVE;COMMENTAIRE_SAISIE;ETAT;PREVOIR_ENLEV
+2025-OBERS-Mittelweg-C01;C;2142/748;30/05/2025;;;;;;OBERSCHAEFFOLSHEIM - Mittleweg;OBERSCHAEFFOLSHEIM;Mittleweg;;;21/02/2025;;2142/746;2025 - 63819;202563819;2025-;;;;;;;;1;FAUX
+2025-OBERS-Mittelweg-C02;C;2142/748;30/05/2025;;;;;;OBERSCHAEFFOLSHEIM - Mittleweg;OBERSCHAEFFOLSHEIM;Mittleweg;;;21/02/2025;;2142/746;2025 - 63819;202563819;2025-;;;;;;;;1;FAUX
+2025-OBERS-Mittelweg-S01;S;2142/748;30/05/2025;;;;;;OBERSCHAEFFOLSHEIM - Mittleweg;OBERSCHAEFFOLSHEIM;Mittleweg;;;21/02/2025;;2142/746;2025 - 63819;202563819;2025-;;;;;;;;1;FAUX
+2025-OBERS-Mittelweg-S02;S;2142/748;30/05/2025;;;;;;OBERSCHAEFFOLSHEIM - Mittleweg;OBERSCHAEFFOLSHEIM;Mittleweg;;;21/02/2025;;2142/746;2025 - 63819;202563819;2025-;;;;;;;;1;FAUX
+2025-OBERS-Mittelweg-S03;S;2142/748;30/05/2025;;;;;;OBERSCHAEFFOLSHEIM - Mittleweg;OBERSCHAEFFOLSHEIM;Mittleweg;;;21/02/2025;;2142/746;2025 - 63819;202563819;2025-;;;;;;;;1;FAUX
+2025-STRAS-Ampère-C01;C;2142/749;30/05/2025;;;;;;STRASBOURG - Rue Ampère;STRASBOURG;Rue Ampère;;;21/02/2025;;2142/746;2025 - 63819;202563819;2025-;;;;;;;;1;FAUX
+2025-STRAS-Ampère-C02;C;2142/749;30/05/2025;;;;;;STRASBOURG - Rue Ampère;STRASBOURG;Rue Ampère;;;21/02/2025;;2142/746;2025 - 63819;202563819;2025-;;;;;;;;1;FAUX
+2025-STRAS-Ampère-S01;S;2142/749;30/05/2025;;;;;;STRASBOURG - Rue Ampère;STRASBOURG;Rue Ampère;;;21/02/2025;;2142/746;2025 - 63819;202563819;2025-;;;;;;;;1;FAUX
+2025-STRAS-Ampère-S02;S;2142/749;30/05/2025;;;;;;STRASBOURG - Rue Ampère;STRASBOURG;Rue Ampère;;;21/02/2025;;2142/746;2025 - 63819;202563819;2025-;;;;;;;;1;FAUX
+2025-STRAS-Legrand-C01;C;2142/750;30/05/2025;;;;;;STRASBOURG - Parvis école A. Legrand;STRASBOURG;Parvis école A. Legrand;;;21/02/2025;;2142/746;2025 - 63819;202563819;2025-;;;;;;;;1;FAUX
+2025-STRAS-Legrand-P01;P;2142/750;30/05/2025;;;;;;STRASBOURG - Parvis école A. Legrand;STRASBOURG;Parvis école A. Legrand;;;21/02/2025;;2142/746;2025 - 63819;202563819;2025-;;;;;;;;1;FAUX
+2025-STRAS-Legrand-S01;S;2142/750;30/05/2025;;;;;;STRASBOURG - Parvis école A. Legrand;STRASBOURG;Parvis école A. Legrand;;;21/02/2025;;2142/746;2025 - 63819;202563819;2025-;;;;;;;;1;FAUX
+2025-STRAS-Polygone144-P01;P;2142/751;30/05/2025;;;;;;STRASBOURG - Route du Polygone;STRASBOURG;Route du Polygone;;;21/02/2025;;2142/746;2025 - 63819;202563819;2025-;;;;;;;;1;FAUX
+2025-STRAS-Polygone144-S01;S;2142/751;30/05/2025;;;;;;STRASBOURG - Route du Polygone;STRASBOURG;Route du Polygone;;;21/02/2025;;2142/746;2025 - 63819;202563819;2025-;;;;;;;;1;FAUX
+2025-STRAS-Rape-P01;P;2142/752;30/05/2025;;;;;;STRASBOURG - Rue de la Rape;STRASBOURG;Rue de la Rape;;;21/02/2025;;2142/746;2025 - 63819;202563819;2025-;;;;;;;;1;FAUX
+2025-STRAS-Rape-P02;P;2142/752;30/05/2025;;;;;;STRASBOURG - Rue de la Rape;STRASBOURG;Rue de la Rape;;;21/02/2025;;2142/746;2025 - 63819;202563819;2025-;;;;;;;;1;FAUX
+2025-STRAS-Rape-S01;S;2142/752;30/05/2025;;;;;;STRASBOURG - Rue de la Rape;STRASBOURG;Rue de la Rape;;;21/02/2025;;2142/746;2025 - 63819;202563819;2025-;;;;;;;;1;FAUX
+2025-STRAS-Rape-S02;S;2142/752;30/05/2025;;;;;;STRASBOURG - Rue de la Rape;STRASBOURG;Rue de la Rape;;;21/02/2025;;2142/746;2025 - 63819;202563819;2025-;;;;;;;;1;FAUX
+2025-STRAS-Rhone-C01;C;2142/753;30/05/2025;;;;;;STRASBOURG - Rue du Rhône;STRASBOURG;Rue du Rhône;;;21/02/2025;;2142/746;2025 - 63819;202563819;2025-;;;;;;;;1;FAUX
+2025-STRAS-Rhone-C02;C;2142/753;30/05/2025;;;;;;STRASBOURG - Rue du Rhône;STRASBOURG;Rue du Rhône;;;21/02/2025;;2142/746;2025 - 63819;202563819;2025-;;;;;;;;1;FAUX
+2025-STRAS-Rhone-S01;S;2142/753;30/05/2025;;;;;;STRASBOURG - Rue du Rhône;STRASBOURG;Rue du Rhône;;;21/02/2025;;2142/746;2025 - 63819;202563819;2025-;;;;;;;;1;FAUX
+2025-STRAS-Rhone-S02;S;2142/753;30/05/2025;;;;;;STRASBOURG - Rue du Rhône;STRASBOURG;Rue du Rhône;;;21/02/2025;;2142/746;2025 - 63819;202563819;2025-;;;;;;;;1;FAUX
+2025-STRAS-Tarade-C01;C;2142/754;30/05/2025;;;;;;STRASBOURG - Rue Tarade;STRASBOURG;Rue Tarade;;;21/02/2025;;2142/746;2025 - 63819;202563819;2025-;;;;;;;;1;FAUX
+2025-STRAS-Tarade-S01;S;2142/754;30/05/2025;;;;;;STRASBOURG - Rue Tarade;STRASBOURG;Rue Tarade;;;21/02/2025;;2142/746;2025 - 63819;202563819;2025-;;;;;;;;1;FAUX
+2025-STRAS-Tarade-S02;S;2142/754;30/05/2025;;;;;;STRASBOURG - Rue Tarade;STRASBOURG;Rue Tarade;;;21/02/2025;;2142/746;2025 - 63819;202563819;2025-;;;;;;;;1;FAUX
+2025-STRAS-Wodli-C01;C;2142/755;30/05/2025;;;;;;STRASBOURG - Rue G. Wodli;STRASBOURG;Rue G. Wodli;;;21/02/2025;;2142/746;2025 - 63819;202563819;2025-;;;;;;;;1;FAUX
+2025-STRAS-Wodli-P01;P;2142/755;30/05/2025;;;;;;STRASBOURG - Rue G. Wodli;STRASBOURG;Rue G. Wodli;;;21/02/2025;;2142/746;2025 - 63819;202563819;2025-;;;;;;;;1;FAUX
+2025-STRAS-Wodli-P02;P;2142/755;30/05/2025;;;;;;STRASBOURG - Rue G. Wodli;STRASBOURG;Rue G. Wodli;;;21/02/2025;;2142/746;2025 - 63819;202563819;2025-;;;;;;;;1;FAUX
+2025-STRAS-Wodli-S01;S;2142/755;30/05/2025;;;;;;STRASBOURG - Rue G. Wodli;STRASBOURG;Rue G. Wodli;;;21/02/2025;;2142/746;2025 - 63819;202563819;2025-;;;;;;;;1;FAUX
+2025-STRAS-Wodli-S02;S;2142/755;30/05/2025;;;;;;STRASBOURG - Rue G. Wodli;STRASBOURG;Rue G. Wodli;;;21/02/2025;;2142/746;2025 - 63819;202563819;2025-;;;;;;;;1;FAUX
+;;;;;;;;;;;;;;;;;N/A;N/A;N/A;;;;;;;;;
+;;;;;;;;;;;;;;;;;N/A;N/A;N/A;;;;;;;;;
+;;;;;;;;;;;;;;;;;N/A;N/A;N/A;;;;;;;;;
+;;;;;;;;;;;;;;;;;N/A;N/A;N/A;;;;;;;;;
+;;;;;;;;;;;;;;;;;N/A;N/A;N/A;;;;;;;;;
+;;;;;;;;;;;;;;;;;N/A;N/A;N/A;;;;;;;;;
+;;;;;;;;;;;;;;;;;N/A;N/A;N/A;;;;;;;;;
+;;;;;;;;;;;;;;;;;N/A;N/A;N/A;;;;;;;;;
+;;;;;;;;;;;;;;;;;N/A;N/A;N/A;;;;;;;;;
+;;;;;;;;;;;;;;;;;N/A;N/A;N/A;;;;;;;;;
+;;;;;;;;;;;;;;;;;N/A;N/A;N/A;;;;;;;;;
+;;;;;;;;;;;;;;;;;N/A;N/A;N/A;;;;;;;;;
+;;;;;;;;;;;;;;;;;N/A;N/A;N/A;;;;;;;;;
+;;;;;;;;;;;;;;;;;N/A;N/A;N/A;;;;;;;;;
+;;;;;;;;;;;;;;;;;N/A;N/A;N/A;;;;;;;;;
+;;;;;;;;;;;;;;;;;N/A;N/A;N/A;;;;;;;;;
+;;;;;;;;;;;;;;;;;N/A;N/A;N/A;;;;;;;;;
+;;;;;;;;;;;;;;;;;N/A;N/A;N/A;;;;;;;;;
+;;;;;;;;;;;;;;;;;N/A;N/A;N/A;;;;;;;;;
+;;;;;;;;;;;;;;;;;N/A;N/A;N/A;;;;;;;;;
+;;;;;;;;;;;;;;;;;N/A;N/A;N/A;;;;;;;;;
+;;;;;;;;;;;;;;;;;N/A;N/A;N/A;;;;;;;;;
+;;;;;;;;;;;;;;;;;N/A;#VALEUR!;N/A;;;;;;;;;
+;;;;;;;;;;;;;;;;;N/A;N/A;N/A;;;;;;;;;
+;;;;;;;;;;;;;;;;;N/A;N/A;N/A;;;;;;;;;
+;;;;;;;;;;;;;;;;;N/A;N/A;N/A;;;;;;;;;
+;;;;;;;;;;;;;;;;;N/A;N/A;N/A;;;;;;;;;
+;;;;;;;;;;;;;;;;;N/A;N/A;N/A;;;;;;;;;
+;;;;;;;;;;;;;;;;;N/A;N/A;N/A;;;;;;;;;
+;;;;;;;;;;;;;;;;;N/A;N/A;N/A;;;;;;;;;
+;;;;;;;;;;;;;;;;;N/A;N/A;N/A;;;;;;;;;
+;;;;;;;;;;;;;;;;;N/A;N/A;N/A;;;;;;;;;
+;;;;;;;;;;;;;;;;;N/A;N/A;N/A;;;;;;;;;
+;;;;;;;;;;;;;;;;;N/A;N/A;N/A;;;;;;;;;
+;;;;;;;;;;;;;;;;;Recherche en cours..;N/A;N/A;;;;;;;;;
+;;;;;;;;;;;;;;;;;N/A;N/A;N/A;;;;;;;;;
+;;;;;;;;;;;;;;;;;N/A;N/A;N/A;;;;;;;;;
+;;;;;;;;;;;;;;;;;N/A;N/A;N/A;;;;;;;;;
+;;;;;;;;;;;;;;;;;N/A;N/A;N/A;;;;;;;;;
+;;;;;;;;;;;;;;;;;N/A;N/A;N/A;;;;;;;;;
+;;;;;;;;;;;;;;;;;N/A;N/A;N/A;;;;;;;;;
+;;;;;;;;;;;;;;;;;N/A;N/A;N/A;;;;;;;;;
+;;;;;;;;;;;;;;;;;N/A;N/A;N/A;;;;;;;;;
+;;;;;;;;;;;;;;;;;N/A;N/A;N/A;;;;;;;;;
+;;;;;;;;;;;;;;;;;N/A;N/A;N/A;;;;;;;;;
+;;;;;;;;;;;;;;;;;N/A;N/A;N/A;;;;;;;;;
+;;;;;;;;;;;;;;;;;N/A;N/A;N/A;;;;;;;;;
+;;;;;;;;;;;;;;;;;N/A;N/A;N/A;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;
