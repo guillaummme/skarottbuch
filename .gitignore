@@ -1,1 +1,49 @@
+# Python
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+*.swp
+
+# Django
+*.log
+*.pot
+*.py[cod]
+db.sqlite3
+media/
+staticfiles/
+local_settings.py
+
+# Environnements virtuels
+venv/
+.env
+.env.*
+
+# JetBrains / PyCharm
+.idea/
+
+# VSCode
+.vscode/
+
+# Mac & Linux
+.DS_Store
+*.bak
+*.tmp
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Archives / fichiers lourds
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+*.bak
+*.iso
+
+# Fichier spécifique de ton projet
 skarottbuch.zip
+
